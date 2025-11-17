@@ -1,0 +1,71 @@
+.grid{
+     display: grid;
+     grid-template-columns: 1fr 4fr 4fr;
+     grid-template-rows: 1fr 5fr 5fr 2fr;
+     height: 90vh;
+}
+ .box{
+    
+    border: 1px solid black;
+ }
+ .logo{
+    background-color: rgb(14, 14, 130);
+    font-size: 30px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+ }
+ .menu{
+    background-color: rgb(229, 69, 69);
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+ }
+ .menu a{
+    text-decoration: none;
+    margin: 20px;
+ }
+ .hero{
+    background-image: url("https://images.unsplash.com/photo-1763063462165-94125cccf210?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    grid-column:1/4;
+    grid-row: 2/3;
+ }
+ .text{
+    color: white;
+ }
+
+ .about{
+    background-color: rgb(131, 123, 123);
+    grid-column:1/3;
+    grid-row: 3/4;
+ }
+ .image{
+    background-image: url("https://plus.unsplash.com/premium_photo-1701091957379-923adda557b1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    grid-column: 3/4;
+    grid-row: 3/4;
+  
+    
+ }
+ .offer{
+    background-color: yellow;
+    grid-column: 1/3;
+    grid-row: 4/5;
+ }
+ .contact{
+    background-color: g;
+    grid-column: 3/4;
+    grid-row: 4/5;
+ }
+
+ @media screen and (max-width:1200px) {
+    .grid{
+         grid-template-columns: 1fr 4fr 4fr;
+     grid-template-rows: 1fr 5fr 7fr 2fr;
+
+    }
+    
+ }
